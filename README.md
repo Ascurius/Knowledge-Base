@@ -61,7 +61,7 @@ Now your client should be included in the server's config file. You can check th
 ## Redirecting the traffic
 Now that the tunnel has been successfully established, we have have to redirect the traffic from our server through the tunnel to our client. Therefore we just have to add new rules to ```iptables```. For information about ```iptables```, check out the tutorial mentioned in the resources.
 ```bash
-iptables -t nat -A PREROUTING -i <network-interface> -p tcp --dport <port> -j DNAT --to-destination <client-ip>:<port>
+iptables -t nat -A PREROUTING -i <network-interface> -p tcp --dport <server-port> -j DNAT --to-destination <client-ip>:<client-port>
 iptables -t nat -A POSTROUTING -j MASQUERADE
 ```
 ### Resources
