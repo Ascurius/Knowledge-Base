@@ -1,6 +1,6 @@
 # Access local webservices using VPS and WireGuard
 
-What is the purpose of this project? There are different use cases but my motivation is to access my web services hosted inside my homelab LAN from the Internet via a VPS through a VPN tunnel. Therefore, we want to redirect the incoming traffic at the VPS to a reverse proxy on our LAN. Theoretically, this project should also enable you to access a webservice that is hosted behind a firewall that would normaly block your requests to that webservice.
+What is the purpose of this project? There are different use cases but my motivation is to access my web services hosted inside my homelab LAN from the Internet via a VPS through a VPN tunnel. Therefore, we want to redirect the incoming traffic at the VPS to a reverse proxy in my LAN. Theoretically, this project should also enable you to access a webservice that is hosted behind a firewall that would normaly block your requests to that webservice.
 
 When the term 'server' is mentioned in the following, it always means a VPS, while the term 'client' always means the computer on which the reverse proxy is deployed.
 
