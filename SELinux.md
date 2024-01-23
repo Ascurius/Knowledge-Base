@@ -1,11 +1,11 @@
 # Create custom policy
 
-## General specifications
+### General specifications
 Policy Statements: https://selinuxproject.org/page/PolicyStatements
 
 Object Permissions: https://selinuxproject.org/page/ObjectClassesPerms
 
-#### docker-samba policy
+### docker-samba policy
 On my server I am runing various Docker containers, specifically a syncthing container. In addition I am also using my server for different Samba shares.
 
 My goal is to mount the host directory /mnt/basis/software/backups/syncthing to the syncthing container, so that all files that are synchronized are accessible under the Samba share "backups". 
