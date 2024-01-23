@@ -88,4 +88,7 @@ sudo semodule -i docker-samba.pp
 ```
 
 ## References
-For detailed information please refer to official documentation of SELinux as well as the tools used here.
+For detailed information about the used tools and SELinux, please refer to the official documentation. Additionally, you can refer to these posts for further information:
+- https://serverfault.com/questions/751589/selinux-create-custom-role
+- https://unix.stackexchange.com/questions/728801/host-wide-consequences-of-setting-selinux-z-z-option-on-container-bind-mounts
+
