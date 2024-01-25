@@ -88,4 +88,5 @@ sudo semodule -i docker-samba.pp
 ```
 
 ## References
+- https://unix.stackexchange.com/questions/728801/host-wide-consequences-of-setting-selinux-z-z-option-on-container-bind-mounts
 For detailed information please refer to official documentation of SELinux as well as the tools used here.
