@@ -1,11 +1,11 @@
 # Create custom policy
 
-## General specifications
+### General specifications
 Policy Statements: https://selinuxproject.org/page/PolicyStatements
 
 Object Permissions: https://selinuxproject.org/page/ObjectClassesPerms
 
-#### docker-samba policy
+### docker-samba policy
 On my server I am runing various Docker containers, specifically a syncthing container. In addition I am also using my server for different Samba shares.
 
 My goal is to mount the host directory /mnt/basis/software/backups/syncthing to the syncthing container, so that all files that are synchronized are accessible under the Samba share "backups". 
@@ -88,5 +88,7 @@ sudo semodule -i docker-samba.pp
 ```
 
 ## References
+For detailed information about the used tools and SELinux, please refer to the official documentation. Additionally, you can refer to these posts for further information:
+- https://serverfault.com/questions/751589/selinux-create-custom-role
 - https://unix.stackexchange.com/questions/728801/host-wide-consequences-of-setting-selinux-z-z-option-on-container-bind-mounts
-For detailed information please refer to official documentation of SELinux as well as the tools used here.
+
