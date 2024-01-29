@@ -3,7 +3,7 @@
 Find all files of certain type in directory and subdirectories and move them to specified target directory
 
 ```ps1
-Get-ChildItem -Path "Y:\Serien\Lost-in-Space\Staffel-1" -Recurse -File -Filter "*.mkv" | Move-Item -Destination "Y:\Serien\Lost-in-Space\Staffel-1" -Force
+Get-ChildItem -Path "SOURCE_DIRECTORY" -Recurse -File -Filter "*.mkv" | Move-Item -Destination "TARGET_DIRECTORY" -Force
 ```
 
 ### Networking
